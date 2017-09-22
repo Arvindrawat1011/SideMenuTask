@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0C2F01B31F74EFFC0053BBC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F01B21F74EFFC0053BBC5 /* AppDelegate.swift */; };
-		0C2F01B51F74EFFC0053BBC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F01B41F74EFFC0053BBC5 /* ViewController.swift */; };
+		0C2F01B51F74EFFC0053BBC5 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F01B41F74EFFC0053BBC5 /* ContainerVC.swift */; };
 		0C2F01B81F74EFFC0053BBC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2F01B61F74EFFC0053BBC5 /* Main.storyboard */; };
 		0C2F01BA1F74EFFC0053BBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2F01B91F74EFFC0053BBC5 /* Assets.xcassets */; };
 		0C2F01BD1F74EFFC0053BBC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2F01BB1F74EFFC0053BBC5 /* LaunchScreen.storyboard */; };
+		0C2F01C51F7517E70053BBC5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F01C41F7517E70053BBC5 /* MainVC.swift */; };
+		0C2F01C91F751DE70053BBC5 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F01C81F751DE70053BBC5 /* SideMenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C2F01AF1F74EFFC0053BBC5 /* SideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2F01B21F74EFFC0053BBC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C2F01B41F74EFFC0053BBC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C2F01B41F74EFFC0053BBC5 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		0C2F01B71F74EFFC0053BBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C2F01B91F74EFFC0053BBC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C2F01BC1F74EFFC0053BBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C2F01BE1F74EFFC0053BBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C2F01C41F7517E70053BBC5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0C2F01C81F751DE70053BBC5 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				0C2F01B21F74EFFC0053BBC5 /* AppDelegate.swift */,
-				0C2F01B41F74EFFC0053BBC5 /* ViewController.swift */,
+				0C2F01B41F74EFFC0053BBC5 /* ContainerVC.swift */,
 				0C2F01B61F74EFFC0053BBC5 /* Main.storyboard */,
+				0C2F01C41F7517E70053BBC5 /* MainVC.swift */,
+				0C2F01C81F751DE70053BBC5 /* SideMenuVC.swift */,
 				0C2F01B91F74EFFC0053BBC5 /* Assets.xcassets */,
 				0C2F01BB1F74EFFC0053BBC5 /* LaunchScreen.storyboard */,
 				0C2F01BE1F74EFFC0053BBC5 /* Info.plist */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2F01B51F74EFFC0053BBC5 /* ViewController.swift in Sources */,
+				0C2F01B51F74EFFC0053BBC5 /* ContainerVC.swift in Sources */,
+				0C2F01C51F7517E70053BBC5 /* MainVC.swift in Sources */,
+				0C2F01C91F751DE70053BBC5 /* SideMenuVC.swift in Sources */,
 				0C2F01B31F74EFFC0053BBC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SideMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.SideMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SideMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.SideMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
